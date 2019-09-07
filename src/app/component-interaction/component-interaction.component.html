@@ -1,0 +1,9 @@
+<hr>
+<h1>Component interaction</h1>
+<div>
+    Hi {{parentData}} <br/><br/>
+    Hello {{secondName}}
+    <br/><br/>
+    <input type="text" [(ngModel)]="messageToParent" placeholder="send a message to parent component"/>
+    <input type="button" (click)="emitChildEvent()" value="SEND DATA TO PARENT" />
+</div>

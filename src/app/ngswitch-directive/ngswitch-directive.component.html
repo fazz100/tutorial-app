@@ -1,0 +1,11 @@
+<div [ngSwitch]="color">
+    <span *ngSwitchCase="blue" style="color:blue">blue</span>
+    <span *ngSwitchCase="red" style="color:red">red</span>
+    <span *ngSwitchCase="green" style="color:green">green</span>
+    <span *ngSwitchDefault [ngStyle]="default">default</span>
+</div>
+
+<div>
+    <input type="text" [(ngModel)]="color" />
+
+</div>

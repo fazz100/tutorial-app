@@ -1,0 +1,4 @@
+<h1>List</h1>
+<div *ngFor="let p of persons" (click)="onSelect(p)" [class.selected]="isSelected(p)" >
+    <span >{{p.name}} - {{p.age}}</span>
+</div>

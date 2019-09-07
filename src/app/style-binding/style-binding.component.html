@@ -1,0 +1,4 @@
+<h1 [style.color]="hasError?'red':'green'" >Style Binding</h1> <!--style binding-->
+<h1 [style.color]="highlightColor" >Style Binding 2</h1> <!--style binding-->
+<h1 [ngStyle]="messageStyle" >Style Binding 2</h1> <!--style binding-->
+<input type="button" value="Error Toggle" (click)="toggleError()" />

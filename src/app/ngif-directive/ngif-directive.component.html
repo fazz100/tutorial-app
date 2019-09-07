@@ -1,0 +1,18 @@
+<div *ngIf="isBasic">
+    IM KALABAW
+</div>
+
+<div *ngIf="isSyn; then thenTemplate; else elseTemplate">
+
+</div>
+
+<ng-template #thenTemplate>
+    <div>SYN</div>
+</ng-template>
+
+
+<ng-template #elseTemplate>
+    <div>ACK</div>
+</ng-template>
+
+<input type="button" value="TOGGLE" (click)="toggleSynAck()" />

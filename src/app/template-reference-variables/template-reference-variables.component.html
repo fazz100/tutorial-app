@@ -1,0 +1,12 @@
+X<input type="text" #x /><br/>
+Y<input type="text" #y /><br/>
+<button type="button" (click)="Add(x.value,y.value)">Add</button><br/>
+<!--it can only be as good as this, as accessing #x and #y from 
+    the component class(the one with the component.ts file)
+is harder than it looks as it involves using @ViewChild() decorator-->
+
+<!--
+
+    for better access of an html element, go for the two way binding instead
+-->
+

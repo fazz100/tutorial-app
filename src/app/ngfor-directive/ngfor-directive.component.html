@@ -1,0 +1,23 @@
+<div *ngFor="let name of names">
+    <h1>{{name}}</h1>
+</div>
+<hr/>
+<div *ngFor="let name of names; index as i">
+        <h1>{{i}}: {{name}}</h1>
+</div>
+<hr/>
+<div *ngFor="let name of names; first as i">
+        <h1>{{i}}: {{name}}</h1>
+</div>
+<hr/>
+<div *ngFor="let name of names; last as i">
+        <h1>{{i}}: {{name}}</h1>
+</div>
+<hr/>
+<div *ngFor="let name of names; even as i">
+        <h1>{{i}}: {{name}}</h1>
+</div>
+<hr/>
+<div *ngFor="let name of names; odd as i">
+        <h1>{{i}}: {{name}}</h1>
+</div>

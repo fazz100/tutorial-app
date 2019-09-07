@@ -1,21 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <app-hello-world></app-hello-world><hr>
+  <app-interpolation-binding></app-interpolation-binding><hr>
+  <app-property-binding></app-property-binding><hr>
+  <app-class-binding></app-class-binding><hr>
+  <app-style-binding></app-style-binding><hr>
+  <app-event-binding></app-event-binding><hr>
+  <app-template-reference-variables></app-template-reference-variables><hr>
+  <app-two-way-binding></app-two-way-binding><hr>
+  <app-ngif-directive></app-ngif-directive><hr>
+  <app-ngswitch-directive></app-ngswitch-directive><hr>
+  <app-ngfor-directive></app-ngfor-directive><hr>
+  <app-component-interaction [parentData]="name" [secondParentData]="name2" (childEvent)="renderSentMessage($event)" ></app-component-interaction>
+  <h1>Received Data From Child: {{leReceivedData}}</h1>
+  <hr/>
+  <app-pipes></app-pipes><hr/>
+  <app-services></app-services><hr/>
+  <app-error-handling></app-error-handling>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div>
+  <h1>ROUTED VIEWS</h1>
+  <nav>
+    <a routerLink="/routed-page1" routerLinkActive="active">Routing Page 1</a>
+    <a routerLink="/routed-page2" routerLinkActive="active">Routing Page 2</a>
+  </nav>
 <router-outlet></router-outlet>
+</div>
